@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="242dp"
+            android:layout_height="149dp"
+            app:srcCompat="@mipmap/foody_login"
+            android:contentDescription="@string/title_product" />
+
+        <EditText
+            android:id="@+id/editTextUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:hint="@string/userName"
+            android:inputType="textPersonName"
+            android:textColorHint="#78909C"
+
+            android:textSize="@dimen/CustomText"
+            tools:ignore="TouchTargetSizeCheck"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColorHint="#78909C"
+            android:textSize="@dimen/CustomText"
+            tools:ignore="TouchTargetSizeCheck"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/buttonXacNhan"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_define"
+            android:text="@string/title_accept"
+
+           />
+
+
+        <TextView
+            android:id="@+id/txtSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:clickable="true"
+            android:text="@string/title_Signup"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="648dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
